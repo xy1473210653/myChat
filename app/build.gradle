@@ -1,14 +1,6 @@
 apply plugin: 'com.android.application'
 
 android {
-    signingConfigs {
-        release {
-            keyAlias 'key0'
-            keyPassword 'xy1997620724'
-            storeFile file('D:/Users/android/keys/chatKey.jks')
-            storePassword 'xy1997620724'
-        }
-    }
     compileSdkVersion 28
     defaultConfig {
         applicationId "com.example.xianyang.mychat"
@@ -22,7 +14,6 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            signingConfig signingConfigs.release
         }
     }
 }
