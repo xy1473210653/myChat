@@ -13,6 +13,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public abstract class Activity extends AppCompatActivity {
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +21,7 @@ public abstract class Activity extends AppCompatActivity {
         initWidows();
         if (initArgs(getIntent().getExtras()))
         {
+            //初始化activity界面
             int layid=getContentLayoutId();
             setContentView(layid);
             initwidget();
@@ -79,7 +81,6 @@ public abstract class Activity extends AppCompatActivity {
         finish();
         return super.onSupportNavigateUp();
     }
-
     @Override
     public void onBackPressed() {
         //得到当前activity下的所有fragment

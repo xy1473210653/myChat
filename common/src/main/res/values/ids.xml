@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--recycler添加-->
+    <item name="tag_recycler_holder" type="id"/>
+    <!--默认头像，实际没有-->
+    <item name="default_portrait"    type="drawable" />
+</resources>

@@ -10,10 +10,10 @@ import butterknife.BindView;
 
 public class MainActivity extends Activity {
     @BindView(R.id.test_txt) TextView textView;
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-    }
+//    @Override
+//    protected void onCreate(Bundle savedInstanceState) {
+//        super.onCreate(savedInstanceState);
+//    }
 
     @Override
     protected int getContentLayoutId() {
